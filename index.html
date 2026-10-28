@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GTA VI — Download (Parody)</title>
+<meta name="description" content="GTA VI is finally here. Only $0.19. Just 1 MB. Download now.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bungee&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pink:#ff2d9b; --orange:#ff9a3c; --gold:#ffd23f; --cyan:#4fe0ff;
+    --bg0:#0c0518; --bg1:#1a0b2e; --ink:#f3e9ff; --mut:#b79fd6;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--bg0);
+    overflow-x:hidden;line-height:1.55;
+  }
+  .sky{
+    position:fixed;inset:0;z-index:-2;
+    background:
+      radial-gradient(120% 80% at 50% 78%, rgba(255,120,60,.55), transparent 55%),
+      radial-gradient(90% 60% at 50% 86%, rgba(255,45,155,.6), transparent 60%),
+      linear-gradient(180deg,#1a0636 0%,#4a1152 38%,#b5306f 63%,#ff7a4d 80%,#ffd27a 100%);
+  }
+  .sun{
+    position:fixed;left:50%;bottom:34%;width:min(46vw,440px);aspect-ratio:1;transform:translateX(-50%);
+    border-radius:50%;z-index:-2;
+    background:linear-gradient(180deg,#fff27a,#ff8a3c 45%,#ff2d9b);
+    -webkit-mask:repeating-linear-gradient(180deg,#000 0 10px,transparent 10px 14px),linear-gradient(180deg,#000 54%,transparent 54%);
+    mask:repeating-linear-gradient(180deg,#000 0 10px,transparent 10px 14px),linear-gradient(180deg,#000 54%,transparent 54%);
+    -webkit-mask-composite:source-in;mask-composite:intersect;
+    filter:drop-shadow(0 0 60px rgba(255,120,60,.6));
+  }
+  .grid{
+    position:fixed;left:50%;bottom:0;width:260vw;height:46vh;transform:translateX(-50%) perspective(40vh) rotateX(72deg);
+    transform-origin:bottom;z-index:-2;
+    background-image:linear-gradient(90deg,rgba(255,45,155,.5) 1px,transparent 1px),linear-gradient(0deg,rgba(79,224,255,.4) 1px,transparent 1px);
+    background-size:7vw 7vh;animation:grid 1.6s linear infinite;
+  }
+  @keyframes grid{to{background-position:0 7vh}}
+  .vig{position:fixed;inset:0;z-index:-1;pointer-events:none;box-shadow:inset 0 0 40vw rgba(0,0,0,.65)}
+
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+  header{text-align:center;padding:12vh 0 6vh}
+  .kick{font-family:'Anton';letter-spacing:.28em;color:var(--cyan);font-size:clamp(12px,2.6vw,17px);text-transform:uppercase;text-shadow:0 0 14px rgba(79,224,255,.7)}
+  .logo{font-family:'Bungee';font-weight:400;line-height:.86;margin:.15em 0 .05em;
+    font-size:clamp(46px,11vw,128px);letter-spacing:.01em;
+    background:linear-gradient(180deg,#fff,#ffd23f 40%,#ff2d9b 90%);-webkit-background-clip:text;background-clip:text;color:transparent;
+    filter:drop-shadow(0 4px 0 rgba(0,0,0,.35)) drop-shadow(0 0 28px rgba(255,45,155,.55));}
+  .vi{font-size:clamp(90px,24vw,300px);display:block;margin-top:-.08em}
+  .tag{color:var(--mut);font-size:clamp(14px,2.4vw,20px);margin-top:.4em;font-weight:600}
+
+  .pricebar{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:30px 0 8px}
+  .chip{background:rgba(20,8,34,.7);border:1px solid rgba(255,45,155,.5);border-radius:999px;
+    padding:10px 20px;font-weight:800;font-size:clamp(14px,2.4vw,18px);backdrop-filter:blur(4px)}
+  .chip b{color:var(--gold)} .chip s{color:#ff6b6b;opacity:.8;font-weight:600}
+  .chip .cyan{color:var(--cyan)}
+
+  .dlbtn{display:inline-flex;align-items:center;gap:12px;margin-top:26px;cursor:pointer;border:none;
+    font-family:'Anton';letter-spacing:.06em;text-transform:uppercase;font-size:clamp(20px,4vw,34px);
+    color:#fff;padding:18px 44px;border-radius:16px;
+    background:linear-gradient(90deg,var(--pink),var(--orange));
+    box-shadow:0 10px 30px rgba(255,45,155,.45),0 0 0 2px rgba(255,255,255,.1) inset;
+    transition:transform .12s,box-shadow .12s;animation:pulse 1.8s ease-in-out infinite}
+  .dlbtn:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 16px 40px rgba(255,45,155,.6)}
+  @keyframes pulse{50%{box-shadow:0 10px 30px rgba(255,45,155,.75),0 0 0 2px rgba(255,255,255,.1) inset}}
+  .sub{color:var(--mut);font-size:13px;margin-top:12px}
+
+  section{padding:5vh 0}
+  h2{font-family:'Anton';letter-spacing:.1em;text-transform:uppercase;font-size:clamp(22px,4.5vw,40px);
+    text-align:center;margin-bottom:22px;color:#fff;text-shadow:0 0 20px rgba(255,45,155,.5)}
+  video{width:100%;border-radius:16px;border:1px solid rgba(255,45,155,.4);box-shadow:0 20px 60px rgba(0,0,0,.6);background:#000}
+  .feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+  .card{background:rgba(20,8,34,.66);border:1px solid rgba(255,45,155,.35);border-radius:16px;padding:22px;backdrop-filter:blur(4px)}
+  .card .big{font-family:'Bungee';font-size:34px;background:linear-gradient(180deg,#fff,var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .card p{color:var(--mut);margin-top:6px;font-size:14px}
+
+  .plats{text-align:center;color:var(--mut);font-family:'Anton';letter-spacing:.2em;font-size:clamp(13px,2.6vw,20px);text-transform:uppercase}
+  footer{text-align:center;padding:6vh 0 8vh;color:#7c6796;font-size:13px}
+  .alt{margin-top:18px;text-align:center}
+  .alt a{color:var(--cyan);text-decoration:none;border-bottom:1px dashed rgba(79,224,255,.5)}
+
+  /* ---- fake download modal ---- */
+  .overlay{position:fixed;inset:0;z-index:50;display:none;align-items:center;justify-content:center;
+    background:rgba(4,2,10,.86);backdrop-filter:blur(6px)}
+  .overlay.on{display:flex}
+  .panel{width:min(520px,92vw);background:linear-gradient(180deg,#1c0b33,#120722);
+    border:1px solid rgba(255,45,155,.5);border-radius:18px;padding:28px;box-shadow:0 30px 80px rgba(0,0,0,.7)}
+  .panel h3{font-family:'Anton';letter-spacing:.06em;text-transform:uppercase;font-size:24px;margin-bottom:6px}
+  .fname{font-family:ui-monospace,Consolas,monospace;color:var(--mut);font-size:13px;min-height:18px;margin:10px 0 14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .track{height:20px;border-radius:999px;background:#2a1640;overflow:hidden;border:1px solid rgba(255,45,155,.3)}
+  .fill{height:100%;width:0;background:linear-gradient(90deg,var(--pink),var(--orange));transition:width .12s}
+  .pc{text-align:right;font-weight:800;margin-top:8px}
+
+  /* ---- gorilla reveal ---- */
+  .reveal{position:fixed;inset:0;z-index:80;display:none;flex-direction:column;align-items:center;justify-content:center;
+    background:#000;text-align:center;cursor:pointer}
+  .reveal.on{display:flex;animation:zap .25s steps(2) 2}
+  @keyframes zap{50%{background:#ff2d9b}}
+  .reveal img{max-height:62vh;border-radius:14px;border:6px solid var(--pink);box-shadow:0 0 70px rgba(255,45,155,.6);animation:shake .09s infinite}
+  @keyframes shake{0%{transform:translate(2px,-1px)}50%{transform:translate(-2px,2px)}100%{transform:translate(1px,1px)}}
+  .fools{font-family:'Bungee';font-size:clamp(48px,12vw,130px);margin-top:18px;
+    background:linear-gradient(180deg,var(--gold),var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent;
+    animation:blink .3s steps(1) infinite}
+  @keyframes blink{50%{filter:hue-rotate(60deg)}}
+  .reveal small{color:#888;margin-top:12px;font-size:14px}
+</style>
+</head>
+<body>
+<div class="sky"></div><div class="sun"></div><div class="grid"></div><div class="vig"></div>
+
+<div class="wrap">
+  <header>
+    <div class="kick">Vice City · Leonida, USA</div>
+    <h1 class="logo">Grand Theft Auto<span class="vi">VI</span></h1>
+    <div class="tag">The wait is over. It's finally here.</div>
+
+    <div class="pricebar">
+      <div class="chip">Price: <s>$69.99</s> &nbsp;<b>$0.19</b></div>
+      <div class="chip">File size: <span class="cyan">1 MB</span></div>
+      <div class="chip">Status: <b>OUT NOW</b></div>
+    </div>
+
+    <button class="dlbtn" onclick="startDownload()">⬇ Download — $0.19</button>
+    <div class="sub">Smaller than this web page. Instant install. No 150 GB.</div>
+  </header>
+
+  <section>
+    <h2>Official Launch Trailer</h2>
+    <video controls preload="metadata" poster="assets/poster.jpg">
+      <source src="assets/trailer.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <section>
+    <h2>Why everyone's switching</h2>
+    <div class="feat">
+      <div class="card"><div class="big">$0.19</div><p>Cheaper than a stick of gum. 99.7% off launch price.</p></div>
+      <div class="card"><div class="big">1 MB</div><p>Downloads before you blink. Fits on a floppy disk twice.</p></div>
+      <div class="card"><div class="big">0 sec</div><p>No queues, no delays, no "coming 2025... 2026... 2027".</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Available on</h2>
+    <div class="plats">PlayStation 5 &nbsp;|&nbsp; Xbox Series X|S &nbsp;|&nbsp; PC</div>
+    <div class="alt">
+      Prefer the desktop installer? <a href="downloads/GTA6_Setup.py" download>Download GTA6_Setup.py</a> (Windows / macOS / Linux)
+    </div>
+  </section>
+
+  <footer>
+    This is a parody / prank page. Not affiliated with Rockstar Games or Take-Two.<br>
+    GTA VI is not actually out. Made for laughs. 🖕
+  </footer>
+</div>
+
+<!-- fake download -->
+<div class="overlay" id="ov">
+  <div class="panel">
+    <h3>Downloading GTA VI…</h3>
+    <div class="fname" id="fn">Connecting to server…</div>
+    <div class="track"><div class="fill" id="fill"></div></div>
+    <div class="pc" id="pc">0%</div>
+  </div>
+</div>
+
+<!-- reveal -->
+<div class="reveal" id="rv" onclick="closeReveal()">
+  <img src="assets/gorilla.png" alt="">
+  <div class="fools">FOOLS!</div>
+  <small>GTA VI is not out. Click anywhere or press Esc to close.</small>
+</div>
+
+<audio id="snd" src="assets/surprise.wav" preload="auto"></audio>
+
+<script>
+const FILES=["vice_city_map.pak","leonida_keys.pak","lucia_anim.bin","jason_voice.wem","vehicles_hd.pak",
+"police_ai.dll","radio_vicecity_fm.ogg","flamingo_physics.bin","textures_8k.pak","alligators.dat",
+"online_shark_cards.cfg","weather_hurricane.fx","shaders_rt.cache"];
+let p=0,running=false;
+function startDownload(){
+  if(running)return; running=true; p=0;
+  document.getElementById('ov').classList.add('on');
+  step();
+}
+function step(){
+  p += Math.random()* (p>55&&p<66?0.5:3.2);
+  if(p>=66){ p=66; paint(); setTimeout(reveal,260); return; }
+  paint();
+  document.getElementById('fn').textContent="Extracting: GTA VI\\data\\"+FILES[Math.floor(p/66*FILES.length)%FILES.length];
+  setTimeout(step, 70+Math.random()*160);
+}
+function paint(){
+  document.getElementById('fill').style.width=p+'%';
+  document.getElementById('pc').textContent=Math.floor(p)+'%';
+}
+function reveal(){
+  document.getElementById('ov').classList.remove('on');
+  const rv=document.getElementById('rv'); rv.classList.add('on');
+  try{ const s=document.getElementById('snd'); s.currentTime=0; s.volume=1; s.play().catch(()=>{}); }catch(e){}
+  try{ const u=new SpeechSynthesisUtterance("Fools!"); u.rate=.9; speechSynthesis.speak(u); }catch(e){}
+}
+function closeReveal(){
+  document.getElementById('rv').classList.remove('on');
+  running=false;
+  try{ speechSynthesis.cancel(); document.getElementById('snd').pause(); }catch(e){}
+}
+document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeReveal(); });
+</script>
+</body>
+</html>
